@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="bookshelf-style.css">
+    <link rel="icon" href="./Logo.png" type="icon/png">
+    <title>English Bookshelf | Kitab Kada</title>
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+            <img src="./Logo.png" alt="KK">
+            <h3 id="h3">Kitab Kada</h3>
+        </div>
+        <nav id="nav-menu">
+            <label id="header-label"><a href="index.html">Home</a></label>
+        </nav>
+        <div id="signin">
+            <a href="./loginpage.html">
+                <button type="button" id="button"><i class="bx bx-user"></i>Sign in</button>
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <h1 class="shelf-title">English Collection</h1>
+        <div id="books-grid-en" class="books-grid">
+            <div id="loading-spinner">Loading English Books...</div>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-p">&copy; Copyright 2026. Kitab Kada</p>
+    </footer>
+
+    <script type="module" src="display-english.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+ :root {
+    --dark-zinc: #083344;
+    --light-zinc: #114b62;
+    --gold: #FFD700;
+    --white: white;
+    --black: black;
+    --shadow: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    margin: 0;
+    padding: 120px 0 0 0;
+    background: radial-gradient(circle at center, var(--light-zinc) 0%, var(--dark-zinc) 70%);
+    background-color: var(--dark-zinc);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ 
+ .upload-container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 40px auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .form-group {
+             margin-bottom: 20px; 
+            }
+        .form-group label { 
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #083344;
+             }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+        #submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: #114b62;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #submit-btn:hover { 
+             background: #083344;
+             transform: translateY(-2px); 
+        }

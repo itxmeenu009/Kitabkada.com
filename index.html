@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="./Logo.png" type="icon/png">
+    <title>Kitab Kada</title>
+    <link rel="stylesheet" href="./index_style.css">
+</head>
+<body>
+    <header id="header">
+        <div id="logo">
+            <img src="./Logo.png" alt="KK">
+            <h3 id="h3">Kitab Kada</h3>
+        </div>
+        <nav id="nav-menu">
+            <label id="header-label"><a href="index.html">Home</a></label>
+        </nav>
+        <div id="signin">
+            <a href="./loginpage.html">
+                <button type="button" id="button"><i class="bx bx-user"></i>Sign in</button>
+            </a>
+        </div>
+    </header>
+
+    <main id="main">
+        <h2 id="main-h2">Welcome to <span>Kitab Kada</span>. This is completely free. Read Books in</h2>
+        <div class="main-button">
+            <button type="button" onclick="window.location.href='urdu-books.html'">Urdu | اردو</button>
+            <button type="button" onclick="window.location.href='english-books.html'">English</button>
+            <button type="button" onclick="window.location.href='arabic-books.html'">Arabic | العربیہ</button>
+        </div>
+    </main>
+
+    <div id="feedback">
+        <div id="feedback-h2">
+            <h2><i class="bx bx-envelope"></i>Send Your Feedback</h2>
+        </div>
+        <form id="feedback-form">
+            <input type="text" id="feedback-name" placeholder="Full Name" required>
+            <input type="email" id="feedback-email" placeholder="Email Address" required>
+            <textarea id="feedback-text" placeholder="Your Message... (min 10 characters)" required></textarea>
+            <div id="feedback-status"></div>
+            <button type="button" id="feedback-send">
+                <span>Send Feedback</span>
+                <i class="bx bx-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+    <footer>
+        <p id="footer-p">&copy; Copyright 2026. Kitab Kada</p>
+        <div class="contact">
+            <a href="https://wa.me/923285520430"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/noorijopu89?igsh=Njl6ZmpkNW0zMnVx"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://pin.it/7x23pxFeD"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>

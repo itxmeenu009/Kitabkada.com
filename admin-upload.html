@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="admin-upload-style.css">
+    <link rel="icon" href="./Logo.png" type="icon/png">
+    <title>Admin Upload | Kitab Kada</title>
+</head>
+<body>
+    <main id="main" style="background: transparent;">
+        <!-- Admin Header -->
+        <div style="background: white; padding: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; border-radius: 20px; max-width: 600px; margin: 40px auto 0;">
+            <div>
+                <span id="admin-email-display" style="color: #083344; font-weight: 600;"></span>
+            </div>
+            <button id="logout-btn" style="padding: 10px 20px; background: #e53e3e; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: 600;">Logout</button>
+        </div>
+
+        <div class="upload-container">
+            <h2 style="margin-bottom: 20px; color: #083344;">Add New Book</h2>
+            <div id="success-message" style="color: #38a169; margin-bottom: 15px; display: none;"></div>
+            <div id="error-message" style="color: #e53e3e; margin-bottom: 15px; display: none;"></div>
+            
+            <form id="upload-form">
+                <div class="form-group">
+                    <label>Book Title</label>
+                    <input type="text" id="bookTitle" placeholder="e.g. Peer-e-Kamil" required>
+                </div>
+                <div class="form-group">
+                    <label>Language Category</label>
+                    <select id="bookCategory">
+                        <option value="urdu">Urdu</option>
+                        <option value="english">English</option>
+                        <option value="arabic">Arabic</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Cover Image URL</label>
+                    <input type="url" id="coverUrl" placeholder="Link from ImgBB or PostImages" required>
+                </div>
+                <div class="form-group">
+                    <label>Download/Read URL</label>
+                    <input type="url" id="downloadUrl" placeholder="Google Drive Link" required>
+                </div>
+                <button type="submit" id="submit-btn">Save Book to Library</button>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="./admin-upload.js"></script>
+</body>
+</html>
